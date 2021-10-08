@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>About</title>
+</head>
+<body>
+	<h1>I am thymleaf here</h1>
+	My name is in small : <p th:text="${name}" ></p>
+    My name is in caps : <p th:text="${ #strings.toUpperCase(name)}" ></p>
+    <h1 th:text="'My name length is :'+ ${#strings.length(name)}"></h1>
+</body>
+</html>

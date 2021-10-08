@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org" th:fragment="Layout(content)">
+<head>
+	<meta charset="UTF-8"  />
+	<title>Base</title>
+	<link rel="stylesheet" th:href= "@{/style.css}"/>
+</head>
+<body>
+	<h1>Take content from service section</h1>
+	<h1>I ama ajay</h1>
+	<div th:replace="${content}">
+	
+	</div>
+</body>
+</html>
